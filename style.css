@@ -1,0 +1,213 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 16px;
+   -webkit-font-smoothing: antialiased;
+   -webkit-text-size-adjust: 100%;
+   text-rendering: optimizeLegibility;
+}
+
+body {
+   font-size: 100%;
+   font-family: 'Roboto', sans-serif;
+}
+
+img, video {
+   max-width: 100%;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: .375rem 1rem;
+   background: #1f1f1f;
+   position: relative;
+   z-index: 10;
+
+}
+
+header h1 {
+   font-size: .875rem;
+   font-weight: 400;
+   margin-right: auto;
+   color: #fff;
+   letter-spacing: .04rem;
+}
+
+main {
+   display: flex;
+   gap: .25rem;
+   background: #403d3d;
+}
+
+footer {
+   background: #1f1f1f;
+   position: relative;
+   z-index: 10;
+   padding: 0 .25rem;
+}
+
+progress {
+   width: 100%;
+   -webkit-appearance: none;
+   appearance: none;
+   height: .25rem;
+   margin-left: .25rem;
+   margin-right: .25rem;
+}
+
+::-webkit-progress-bar {
+   background: #fff;
+   border-radius: .5rem;
+}
+
+::-webkit-progress-value {
+   background: #1a73e8;
+   border-radius: .5rem;
+}
+
+.navleft {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+}
+
+.cta-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.filled-btn {
+   background: #1a73e8;
+   border: 1px solid transparent;
+   color: #fff;
+   padding-left: 1.25rem;
+   padding-right: 1.25rem;
+   height: 2.25rem;
+   border-radius: .25rem;
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+   font-size: .875rem;
+   font-weight: 500;
+   letter-spacing: .06rem;
+}
+
+.filled-btn:hover {
+   background: rgba(26, 115, 232,.8);
+}
+
+.text-btn {
+   background: transparent;
+   border: 1px solid transparent;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+   height: 2.25rem;
+   font-size: .875rem;
+   border-radius: .25rem;
+   font-weight: 500;
+   letter-spacing: .06rem;
+   padding-left: .5rem;
+   padding-right: .5rem;
+   gap: .375rem;
+}
+
+.text-btn:hover {
+   background: rgba(255, 255, 255, .1);
+}
+
+.icon-btn {
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: transparent;
+   font-size: .75rem;
+   color: #fff;
+}
+
+.icon-btn:hover {
+   background: rgba(255, 255, 255, .125);
+}
+
+.video-container, .slide-container {
+   display: flex;
+}
+
+.video-container video, .slide-container img {
+   object-fit: cover;
+   display: flex;
+}
+
+.progress-wrapper {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+}
+
+.progress-controls {
+   display: flex;
+   align-items: center;
+   gap: .25rem;
+}
+
+.timeline-wrapper {
+   padding-top: .25rem;
+}
+
+.timeline-wrapper ul {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   overflow-x: scroll;
+   align-items: flex-start;
+   color: #fff;
+   background: #1f1f1f;
+   position: fixed;
+   left: 0;
+   height: 100%;
+}
+
+.ticmark {
+   background: #fff;
+   width: 1px;
+   height: .625rem;
+   display: inline-block;
+   position: relative;
+}
+
+.tic {
+   height: 1rem;
+}
+
+.ticmark p {
+   color: #fff;
+   font-size: .75rem;
+   padding-top: 1.25rem;
+   display: flex;
+   justify-content: center;
+   letter-spacing: .06rem;
+}
+
+header, main, footer, .timeline-wrapper ul {
+   background: #161616
+}
