@@ -34,10 +34,9 @@ header {
    align-items: center;
    justify-content: space-between;
    padding: .375rem 1rem;
-   background: #1f1f1f;
+   background: #161616;
    position: relative;
    z-index: 10;
-
 }
 
 header h1 {
@@ -46,38 +45,6 @@ header h1 {
    margin-right: auto;
    color: #fff;
    letter-spacing: .04rem;
-}
-
-main {
-   display: flex;
-   gap: .25rem;
-   background: #403d3d;
-}
-
-footer {
-   background: #1f1f1f;
-   position: relative;
-   z-index: 10;
-   padding: 0 .25rem;
-}
-
-progress {
-   width: 100%;
-   -webkit-appearance: none;
-   appearance: none;
-   height: .25rem;
-   margin-left: .25rem;
-   margin-right: .25rem;
-}
-
-::-webkit-progress-bar {
-   background: #fff;
-   border-radius: .5rem;
-}
-
-::-webkit-progress-value {
-   background: #1a73e8;
-   border-radius: .5rem;
 }
 
 .navleft {
@@ -149,13 +116,76 @@ progress {
    background: rgba(255, 255, 255, .125);
 }
 
-.video-container, .slide-container {
+main {
    display: flex;
+   gap: .25rem;
+   background: #161616;
+}
+
+.video-container {
+   flex-basis: 56%;
+   max-width: 56%;
+   width: 100%;
+   display: flex;
+}
+
+.slide-container {
+   flex-basis: 44%;
+   max-width: 44%;
+   width: 100%;
+   display: flex;
+   position: relative;
 }
 
 .video-container video, .slide-container img {
    object-fit: cover;
    display: flex;
+}
+
+.slide-navigation {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   gap: 1.5rem;
+   bottom: 0%;
+   left: 50%;
+   transform: translate(-50%, 0%);
+   opacity: 0;
+   transition: 0.25s ease;
+   padding: 0 .375rem;
+   border-radius: .375rem .375rem 0 0;
+}
+
+.slide-navigation:hover {
+   opacity: 1;
+   background: rgba(0,0,0,0.2);
+}
+
+footer {
+   background: #161616;
+   position: relative;
+   z-index: 10;
+   padding: 0 .25rem;
+}
+
+progress {
+   width: 100%;
+   -webkit-appearance: none;
+   appearance: none;
+   height: .25rem;
+   margin-left: .25rem;
+   margin-right: .25rem;
+}
+
+::-webkit-progress-bar {
+   background: #fff;
+   border-radius: .5rem;
+}
+
+::-webkit-progress-value {
+   background: #1a73e8;
+   border-radius: .5rem;
 }
 
 .progress-wrapper {
@@ -181,7 +211,7 @@ progress {
    overflow-x: scroll;
    align-items: flex-start;
    color: #fff;
-   background: #1f1f1f;
+   background: #161616;
    position: fixed;
    left: 0;
    height: 100%;
@@ -206,8 +236,4 @@ progress {
    display: flex;
    justify-content: center;
    letter-spacing: .06rem;
-}
-
-header, main, footer, .timeline-wrapper ul {
-   background: #161616
 }
